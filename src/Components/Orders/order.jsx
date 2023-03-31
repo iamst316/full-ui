@@ -15,7 +15,7 @@ const Order = () => {
   const navigation = useNavigate()
   useEffect(() => {
     setrelode(false)
-    const url = "http://localhost:5000/orders";
+    const url = "https://full-server-iamst316.onrender.com/orders";
 
     // const options = {
     //   method: "GET",

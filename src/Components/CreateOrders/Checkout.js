@@ -19,12 +19,12 @@ export default function (props) {
   }/${current.getFullYear()} ${today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()} PM` ;
 
   const fetchData = () => {
-    return fetch("http://localhost:5000/store",{credentials: "include"})
+    return fetch("https://full-server-iamst316.onrender.com/store",{credentials: "include"})
       .then((response) => response.json())
       .then((data) => setStore(data));
   };
   const fetchUser = () => {
-    return fetch("http://localhost:5000/users",{credentials: "include"})
+    return fetch("https://full-server-iamst316.onrender.com/users",{credentials: "include"})
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
@@ -102,7 +102,7 @@ export default function (props) {
   const postOrder = () => {
     
     navigate("/popup");
-    return fetch("http://localhost:5000/order", {
+    return fetch("https://full-server-iamst316.onrender.com/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

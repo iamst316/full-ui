@@ -16,7 +16,7 @@ const [loggedin,setLoggedin] =useState(true)
 useEffect(()=>{
     if(loggedin){
        async function getData(){
-            let response = await axios.get('http://localhost:5000/protected',{
+            let response = await axios.get('https://full-server-iamst316.onrender.com/protected',{
                 withCredentials:true
             })
             let name = response.data
@@ -29,7 +29,7 @@ useEffect(()=>{
 },[loggedin])
 
 async function logout(){
-    let data = await axios.post('http://localhost:5000/logout',{
+    let data = await axios.post('https://full-server-iamst316.onrender.com/logout',{
         withCredentials:true
     })
     alert("Want to Logout!");

@@ -5,7 +5,7 @@ const Alert = ({ setalertmodal, orderId, setrelode }) => {
 
 
     const handelProceed = () => {
-        const url = `http://localhost:5000/orders/${orderId}`;
+        const url = `https://full-server-iamst316.onrender.com/orders/${orderId}`;
         const payload = { orderStatus: "Cancelled" };
 
         fetch(url, {

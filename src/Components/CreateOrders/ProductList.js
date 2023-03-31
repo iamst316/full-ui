@@ -46,7 +46,7 @@ export default function ProductList() {
     
     // here, the product db is being fetched via get request from app.js express endpoint
     const fetchData = () => {
-        return fetch("http://localhost:5000/products",{credentials: "include"})
+        return fetch("https://full-server-iamst316.onrender.com/products",{credentials: "include"})
         .then((response) => response.json())
         .then((data) => setProduct(data));
     }

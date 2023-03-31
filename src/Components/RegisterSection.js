@@ -26,7 +26,7 @@ function RegisterSection() {
         address,
         password,
       };
-      await axios.post("http://localhost:5000/signup", newUser);
+      await axios.post("https://full-server-iamst316.onrender.com/signup", newUser);
       alert("Sign up successful!");
       setName("")
       setEmail("")
